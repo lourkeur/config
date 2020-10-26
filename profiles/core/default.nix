@@ -13,7 +13,15 @@ in
 
   environment = {
 
-    variables.CDPATH = ["." "~"];
+    variables = {
+      CDPATH = ["." "~"];
+      LESS = "-eRSX";  # e causes less to automatically exit when it reaches end-of-file.
+                       # R causes less to let color sequences through.
+                       # S causes less not to wrap long lines.
+                       # X causes less not to clear the screen.
+      LESSOPEN = "|${pkgs.lesspipe}/bin/lesspipe.sh %s";
+      PAGER = "less";
+    };
 
     systemPackages = with pkgs; [
       binutils
@@ -29,6 +37,7 @@ in
       gptfdisk
       iputils
       jq
+      less
       libarchive
       manix
       moreutils
@@ -55,6 +64,8 @@ in
         tar = "bsdtar";
 
         e = "$EDITOR";
+
+        l = pkgs.writers.writeC "l" {} ./l.c;
 
         # git
         g = "git";
