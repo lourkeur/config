@@ -9,6 +9,8 @@ in
   i18n.defaultLocale = "fr_CH.UTF-8";
   time.timeZone = "Europe/Zurich";
 
+  console.useXkbConfig = true;
+
   environment = {
 
     variables.CDPATH = ["." "~"];
@@ -32,6 +34,7 @@ in
       moreutils
       nix-index
       nmap
+      pass-otp
       ripgrep
       tealdeer
       utillinux
@@ -165,6 +168,16 @@ in
   programs.autojump.enable = true;
 
   services.earlyoom.enable = true;
+
+  services.openssh = {
+    enable = true;
+    startWhenNeeded = true;
+
+    # hardening
+    permitRootLogin = "no";
+    challengeResponseAuthentication = false;
+    passwordAuthentication = false;
+  };
 
   users.mutableUsers = false;
 
