@@ -19,7 +19,6 @@ let
   pkgImport = nixpkgs: overlays: system:
     import nixpkgs {
       inherit system overlays;
-      config = { allowUnfree = true; };
     };
 
   # Convert a list to file paths to attribute set
