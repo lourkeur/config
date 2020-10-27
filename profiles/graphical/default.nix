@@ -10,11 +10,11 @@
 
   programs.browserpass.enable = true;
 
-  programs.geary.enable = false;  # doesn't build for some reason
   environment.gnome3.excludePackages = with pkgs; [
     gnome3.epiphany  # I don't use
   ];
 
+  services.xserver.enable = true;
   services.xserver.desktopManager.gnome3.enable = true;
 
   services.xserver.displayManager = {
