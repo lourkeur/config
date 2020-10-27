@@ -6,6 +6,7 @@
     gimp
     gnome3.dconf-editor
     gnome3.gnome-tweaks
+    yaru-theme
   ];
 
   programs.browserpass.enable = true;
