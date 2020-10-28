@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ lib, pkgs, ... }:
 
 {
   environment.systemPackages = with pkgs; [
@@ -14,6 +14,8 @@
   environment.gnome3.excludePackages = with pkgs; [
     gnome3.epiphany  # I don't use
   ];
+
+  services.gnome3.gnome-keyring.enable = lib.mkForce false; # conflicts w/ ssh
 
   services.xserver.enable = true;
   services.xserver.desktopManager.gnome3.enable = true;
