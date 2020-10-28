@@ -1,7 +1,9 @@
 # override defaults to nixpkgs/master
 {
   # modules to pull from override, stable version is automatically disabled
-  modules = [ ];
+  modules = [
+    "programs/neovim.nix"
+  ];
 
   # if a modules name changed in override, add the old name here
   disabledModules = [ ];
