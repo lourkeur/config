@@ -173,9 +173,12 @@ in
 
   };
 
-  programs.fish.enable = true;
-
   programs.autojump.enable = true;
+
+  programs.fish = {
+    enable = true;
+    promptInit = builtins.readFile ./prompt_init.fish;
+  };
 
   programs.gnupg.agent.enable = true;
   programs.gnupg.agent.enableSSHSupport = true;
