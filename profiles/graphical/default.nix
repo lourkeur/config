@@ -1,6 +1,7 @@
 { lib, pkgs, ... }:
 
 {
+  boot.plymouth.enable = true;
   environment.systemPackages = with pkgs; [
     brave
     gimp
