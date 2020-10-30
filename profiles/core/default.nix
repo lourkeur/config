@@ -34,8 +34,8 @@ in
       dosfstools
       fd
       git
-      gotop
       gptfdisk
+      htop
       iputils
       jq
       less
@@ -101,7 +101,7 @@ in
         se = ifSudo "sudoedit";
 
         # top
-        top = "gotop";
+        top = "htop";
 
         # systemd
         ctl = "systemctl";
