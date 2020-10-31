@@ -2,12 +2,6 @@
 
 {
   services.xserver.extraLayouts = {
-    custom_tek = {
-      description = "my own custom layout (Teck)";
-      symbolsFile = symbols/custom_tek;
-      languages = [ "en" "fr" "de" ];
-    };
-
     custom_xbows = {
       description = "my own custom layout (X-Bows)";
       symbolsFile = symbols/custom_xbows;
