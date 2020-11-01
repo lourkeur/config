@@ -15,12 +15,15 @@
       dhall
       discord
       element-desktop
+      firefox
       manix
       nixpkgs-fmt
       nixFlakes
+      obs-studio
       qutebrowser
       signal-desktop
-      starship;
+      starship
+      tor-browser-bundle-bin;
 
     haskellPackages = prev.haskellPackages.override {
       overrides = hfinal: hprev:

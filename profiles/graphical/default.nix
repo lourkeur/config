@@ -4,10 +4,13 @@
   boot.plymouth.enable = true;
   environment.systemPackages = with pkgs; [
     brave
+    firefox
     gimp
     gnome3.dconf-editor
     gnome3.gnome-tweaks
+    tor-browser-bundle-bin
     yaru-theme
+    nixos-artwork.wallpapers.simple-red
   ];
 
   programs.browserpass.enable = true;
