@@ -56,6 +56,11 @@ xkb_symbols "custom_xbows" {
     key <BKSP> { [ BackSpace, Escape ] };
     key <RTRN> { [ Return,    Tab    ] };
 
+    // Repurpose Caps as a duplicate backslash
+    key <CAPS> { [ backslash, bar ] };
+    // and add caps to left shift to compensate
+    include "shift(lshift_both_capslock_cancel)"
+
     // Accents and special characters (FR/EN/DE)
     key <AC01> { [ NoSymbol, NoSymbol, dead_diaeresis,  dead_diaeresis  ] };
     key <AC02> { [ NoSymbol, NoSymbol, dead_circumflex, dead_circumflex ] };
