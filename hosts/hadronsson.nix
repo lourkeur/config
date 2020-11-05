@@ -23,6 +23,8 @@
   networking.interfaces.enp3s0f2.useDHCP = true;
   networking.interfaces.wlp2s0.useDHCP = true;
 
+  # For WiFi card
+  hardware.enableRedistributableFirmware = true;
   programs.captive-browser.interface = "wlp2s0";
 
   users.mutableUsers = false;
