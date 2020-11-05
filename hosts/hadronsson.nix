@@ -6,6 +6,7 @@
       ../users/louis
       ../profiles/graphical
       ../profiles/laptop
+      ../profiles/utils
     ];
 
   # Use the GRUB 2 boot loader.
