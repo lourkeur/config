@@ -11,6 +11,7 @@
     tor-browser-bundle-bin
     yaru-theme
     nixos-artwork.wallpapers.simple-red
+    vscode-with-extensions
   ];
 
   programs.browserpass.enable = true;
