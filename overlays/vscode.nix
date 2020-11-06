@@ -5,8 +5,8 @@ self: super:
     scala-lang.scala = extensionFromVscodeMarketplace {
       name = "scala";
       publisher = "scala-lang";
-      version = "0.3.8";
-      sha256 = "17dl10m3ayf57sqgil4mr9fjdm7i8gb5clrs227b768pp2d39ll9";
+      version = "0.4.5";
+      sha256 = "bc7f4e16ea14b860f4b4e73602065bdcd53a7447e440f712e3db20759418325b";
     };
     lampepfl.dotty = extensionFromVscodeMarketplace {
       name = "dotty";
