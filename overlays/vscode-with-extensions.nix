@@ -1,7 +1,7 @@
-self: super:
+final: prev:
 
 {
-  vscode-extensions = with self.vscode-utils; super.vscode-extensions // {
+  vscode-extensions = with final.vscode-utils; prev.vscode-extensions // {
     scala-lang.scala = extensionFromVscodeMarketplace {
       name = "scala";
       publisher = "scala-lang";
@@ -16,9 +16,9 @@ self: super:
     };
   };
 
-  vscode-with-extensions = super.vscode-with-extensions.override {
-    vscode = self.vscodium;
-    vscodeExtensions = with self.vscode-extensions; [
+  vscode-with-extensions = prev.vscode-with-extensions.override {
+    vscode = final.vscodium;
+    vscodeExtensions = with final.vscode-extensions; [
       bbenoist.Nix
       vscodevim.vim
       scala-lang.scala
