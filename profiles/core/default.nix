@@ -2,6 +2,8 @@
 let inherit (lib) fileContents;
 in
 {
+  boot.cleanTmpDir = true;
+
   nix.package = pkgs.nixFlakes;
 
   nix.systemFeatures = [ "nixos-test" "benchmark" "big-parallel" "kvm" ];
