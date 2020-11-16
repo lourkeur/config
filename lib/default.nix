@@ -19,6 +19,7 @@ let
   pkgImport = nixpkgs: overlays: system:
     import nixpkgs {
       inherit system overlays;
+      config = import ../nixpkgs/config.nix { inherit (nixos) lib; };
     };
 
   # Convert a list to file paths to attribute set
