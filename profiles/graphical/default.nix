@@ -5,7 +5,7 @@
   environment.systemPackages = with pkgs; [
     android-studio
     brave
-    firefox
+    firefox-bin
     gimp
     gnome3.dconf-editor
     gnome3.gnome-tweaks

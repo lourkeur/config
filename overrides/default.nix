@@ -17,6 +17,7 @@
       discord
       element-desktop
       firefox
+      firefox-bin
       manix
       nixpkgs-fmt
       nixFlakes
