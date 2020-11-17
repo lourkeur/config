@@ -52,6 +52,7 @@
   };
 
   environment.systemPackages = with pkgs; [
-    cudatoolkit # yuck!
+    android-studio
+    cudatoolkit cudatoolkit.lib # yuck!
   ];
 }

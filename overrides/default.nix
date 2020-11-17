@@ -11,6 +11,7 @@
   # packages pulled from override
   packages = pkgs: final: prev: {
     inherit (pkgs)
+      android-studio
       brave
       dhall
       discord
