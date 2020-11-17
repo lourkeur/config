@@ -50,4 +50,8 @@
   device = "machaut.ici:/home";
   fsType = "nfs";
   };
+
+  environment.systemPackages = with pkgs; [
+    cudatoolkit # yuck!
+  ];
 }
