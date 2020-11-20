@@ -23,6 +23,8 @@
 
   services.gnome3.gnome-keyring.enable = lib.mkForce false; # conflicts w/ ssh
 
+  services.printing.enable = true;
+
   services.xserver.enable = true;
   services.xserver.desktopManager.gnome3.enable = true;
 
