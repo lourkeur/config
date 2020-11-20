@@ -178,7 +178,10 @@ in
     sshServe = {
       enable = true;
       protocol = "ssh-ng";
-      keys = [ "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIAeoDZd1X5lKZ+nQGdYPH+2DUGUlKQ8skcHqE6mCMDt4 root@hadronsson" ];
+      keys = [
+        "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIAeoDZd1X5lKZ+nQGdYPH+2DUGUlKQ8skcHqE6mCMDt4 root@hadronsson"
+        "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAINp3VzaG3ki6kz3/dKmUwMeel4fGWhwkpFD5NW6p5AEG root@niximg"
+      ];
     };
 
     binaryCaches = lib.optional (config.networking.hostName != "hadron" && !config.special.roaming) "ssh-ng://nix-ssh@hadron";
