@@ -46,11 +46,6 @@
     mountPoint = "/tmp";
   };
 
-  fileSystems."/home/nfs" = {
-  device = "machaut.ici:/home";
-  fsType = "nfs";
-  };
-
   environment.systemPackages = with pkgs; [
     android-studio
     cudatoolkit cudatoolkit.lib # yuck!

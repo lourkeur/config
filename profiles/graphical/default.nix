@@ -1,4 +1,4 @@
-{ lib, pkgs, ... }:
+{ config, lib, pkgs, ... }:
 
 {
   boot.plymouth.enable = true;
@@ -32,5 +32,12 @@
     defaultSession = "gnome";
     lightdm.autoLogin.enable = true;
     lightdm.autoLogin.user = "louis";
+  };
+
+  fileSystems = lib.optionalAttrs config.special.roaming {
+    "/home/nfs" = {
+      device = "machaut.ici:/home";
+      fsType = "nfs";
+    };
   };
 }
