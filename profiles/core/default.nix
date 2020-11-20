@@ -164,7 +164,7 @@ in
 
     useSandbox = true;
 
-    allowedUsers = [ "@wheel" ];
+    allowedUsers = [ "nix-ssh" "@wheel" ];
 
     trustedUsers = [ "root" "@wheel" ];
 
@@ -175,6 +175,13 @@ in
       fallback = true
     '';
 
+    sshServe = {
+      enable = true;
+      protocol = "ssh-ng";
+      keys = [ "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIAeoDZd1X5lKZ+nQGdYPH+2DUGUlKQ8skcHqE6mCMDt4 root@hadronsson" ];
+    };
+
+    binaryCaches = lib.optional (config.networking.hostName != "hadron" && !config.special.roaming) "ssh-ng://nix-ssh@hadron";
   };
 
   programs.autojump.enable = true;
