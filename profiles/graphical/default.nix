@@ -9,6 +9,7 @@
     gimp
     gnome3.dconf-editor
     gnome3.gnome-tweaks
+    thunderbird-bin
     tor-browser-bundle-bin
     yaru-theme
     nixos-artwork.wallpapers.simple-red

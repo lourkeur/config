@@ -6,6 +6,7 @@
     in builtins.elem pname [
       "Oracle_VM_VirtualBox_Extension_Pack"
       "firefox-bin" "firefox-release-bin-unwrapped"
+      "thunderbird-bin"
       "cudatoolkit"
       "android-studio-stable"
   ];
