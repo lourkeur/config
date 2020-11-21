@@ -166,7 +166,8 @@ in
     trustedUsers = [ "root" "@wheel" ];
 
     extraOptions = ''
-      min-free = ${toString (512 * 1024 * 1024)}
+      min-free = ${toString (5  * 1024 * 1024 * 1024)}
+      max-free = ${toString (10 * 1024 * 1024 * 1024)}
       keep-outputs = true
       keep-derivations = true
       fallback = true
