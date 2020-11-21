@@ -25,7 +25,9 @@
       qutebrowser
       signal-desktop
       starship
+      thunderbird-bin
       tor-browser-bundle-bin
+      vscode-with-extensions
       vscodium;
 
     haskellPackages = prev.haskellPackages.override {
