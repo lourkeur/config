@@ -7,6 +7,7 @@
     uid = 1001;
     extraGroups = [
       "wheel"
+      "lpadmin"
       "nitrokey"
       "usbblaster"
       "tor"
