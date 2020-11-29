@@ -3,7 +3,6 @@
 {
   boot.plymouth.enable = true;
   environment.systemPackages = with pkgs; [
-    android-studio
     brave
     firefox-bin
     gimp
