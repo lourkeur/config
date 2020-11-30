@@ -206,7 +206,7 @@ in
 
   nix.gc.automatic = true;
   nix.gc.options = "--delete-older-than 1w";
-  nix.gc.dates = "Sun 03:15";
+  nix.gc.dates = "Sat 03:15";
   systemd.timers.nix-gc.timerConfig.Persistent = true;
 
   services.earlyoom.enable = true;
