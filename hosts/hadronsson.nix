@@ -27,6 +27,11 @@
   hardware.enableRedistributableFirmware = true;
   programs.captive-browser.interface = "wlp2s0";
 
+  services.btrfs.autoScrub = {
+    enable = true;
+    interval = "Sun 03:15";
+  };
+
   users.mutableUsers = false;
 
   # This value determines the NixOS release with which your system is to be
