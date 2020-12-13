@@ -1,4 +1,4 @@
-# https://github.com/NixOS/nixpkgs/pull/104645
+# https://github.com/NixOS/nixpkgs/pull/106718
 
 { stdenv, lib, fetchurl
 , dpkg
@@ -64,6 +64,7 @@ rpath = lib.makeLibraryPath [
   libdrm
   libpulseaudio
   libX11
+  libxkbcommon
   libXScrnSaver
   libXcomposite
   libXcursor
@@ -71,7 +72,6 @@ rpath = lib.makeLibraryPath [
   libXext
   libXfixes
   libXi
-  libxkbcommon
   libXrandr
   libXrender
   libXtst
@@ -90,11 +90,11 @@ in
 
 stdenv.mkDerivation rec {
   pname = "brave";
-  version = "1.17.75";
+  version = "1.18.70";
 
   src = fetchurl {
     url = "https://github.com/brave/brave-browser/releases/download/v${version}/brave-browser_${version}_amd64.deb";
-    sha256 = "sha256-GDhV6YfUyEGGOlwWtHmBeiwSqxXyhJCU7AcGuQAYD4I=";
+    sha256 = "08v9r41knmvi3vi27hs8rsjiyrxiidx24zzwz2gbclf4l42sk88j";
   };
 
   dontConfigure = true;
@@ -159,7 +159,7 @@ stdenv.mkDerivation rec {
       contribute to your favorite creators automatically.
     '';
     license = licenses.mpl20;
-    maintainers = with maintainers; [ uskudnik rht jefflabonte ];
+    maintainers = with maintainers; [ uskudnik rht jefflabonte nasirhm ];
     platforms = [ "x86_64-linux" ];
   };
 }
