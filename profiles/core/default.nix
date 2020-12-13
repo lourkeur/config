@@ -101,8 +101,7 @@ in
         nixos-option = "nixos-option -I nixpkgs=${toString ../../compat}";
 
         # sudo
-        s = ifSudo "sudo -E ";
-        si = ifSudo "sudo -i";
+        s = ifSudo (pkgs.writers.writeC "s" {} ./s.c);
         se = ifSudo "sudoedit";
 
         # top
