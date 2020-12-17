@@ -40,12 +40,6 @@
   # should.
   system.stateVersion = "19.09"; # Did you read the comment?
 
-  fileSystems.tmp = {
-    device = "/dev/disk/by-label/tmp";
-    fsType = "ext4";
-    mountPoint = "/tmp";
-  };
-
   environment.systemPackages = with pkgs; [
     android-studio
   ];
