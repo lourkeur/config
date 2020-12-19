@@ -18,18 +18,23 @@
       fsType = "ext4";
     };
 
+  fileSystems."/nix" =
+    { device = "/dev/disk/by-uuid/46eb9bbb-d5b6-4c19-a2cc-84f606d663c7";
+      fsType = "btrfs";
+    };
+
   fileSystems."/boot" =
     { device = "/dev/disk/by-uuid/799C-89B5";
       fsType = "vfat";
     };
 
-  fileSystems."/tmp" =
-    { device = "/dev/disk/by-uuid/d6b07c1f-5865-4bae-8a97-e653c1d1e400";
+  fileSystems."/var/lib/transmission" =
+    { device = "/dev/disk/by-uuid/3dbe6b94-7de6-466c-b3cf-de71c61e892b";
       fsType = "ext4";
     };
 
-  fileSystems."/var/lib/transmission" =
-    { device = "/dev/disk/by-uuid/3dbe6b94-7de6-466c-b3cf-de71c61e892b";
+  fileSystems."/tmp" =
+    { device = "/dev/disk/by-uuid/d6b07c1f-5865-4bae-8a97-e653c1d1e400";
       fsType = "ext4";
     };
 
