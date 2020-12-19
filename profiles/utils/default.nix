@@ -1,6 +1,8 @@
 { pkgs, ... }:
 
 {
+  boot.binfmt.emulatedSystems = [ "aarch64-linux" ];
+
   nix.signStorePaths = true;
   nix.sshServe = {
     enable = true;
