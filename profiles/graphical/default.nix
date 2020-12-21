@@ -18,10 +18,7 @@
 
   programs.browserpass.enable = true;
 
-  environment.gnome3.excludePackages = with pkgs; [
-    gnome3.epiphany  # I don't use
-  ];
-
+  services.gnome3.core-utilities.enable = false;  # strips down gnome of hard-to-compile and seldom used programs
   services.gnome3.gnome-keyring.enable = lib.mkForce false; # conflicts w/ ssh
 
   services.printing.enable = true;
