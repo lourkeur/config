@@ -18,6 +18,11 @@
     package = pkgs.jdk11;
   };
 
+  programs.wireshark = {
+    enable = true;
+    package = pkgs.wireshark;
+  };
+
   virtualisation.podman = {
     enable = true;
     dockerCompat = true;
