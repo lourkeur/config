@@ -39,4 +39,6 @@
       fsType = "nfs";
     };
   };
+
+  services.mingetty.autologinUser = "louis";
 }
