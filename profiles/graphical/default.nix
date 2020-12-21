@@ -9,6 +9,7 @@
     gnome3.dconf-editor
     gnome3.gnome-tweaks
     obs-studio
+    sakura
     thunderbird-bin
     tor-browser-bundle-bin
     yaru-theme
