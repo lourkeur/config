@@ -9,6 +9,7 @@
     gnome3.dconf-editor
     gnome3.gnome-tweaks
     obs-studio
+    gnome3.nautilus
     sakura
     thunderbird-bin
     tor-browser-bundle-bin
@@ -16,6 +17,9 @@
     nixos-artwork.wallpapers.simple-red
     vscode-with-extensions
   ];
+
+  services.gnome3.sushi.enable = true;
+  programs.evince.enable = true;
 
   programs.browserpass.enable = true;
 
