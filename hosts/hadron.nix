@@ -9,6 +9,7 @@
     [ # Include the results of the hardware scan.
       hadron/hardware-configuration.nix
       ../profiles/graphical
+      ../profiles/torbox
       ../profiles/utils
       ../users/louis
     ];
