@@ -17,7 +17,6 @@
       discord
       element-desktop
       firefox
-      firefox-bin
       manix
       nixpkgs-fmt
       nixFlakes
@@ -25,7 +24,6 @@
       qutebrowser
       signal-desktop
       starship
-      thunderbird-bin
       tor-browser-bundle-bin
       vscode-with-extensions
       vscodium;

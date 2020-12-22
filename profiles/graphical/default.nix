@@ -4,14 +4,14 @@
   boot.plymouth.enable = true;
   environment.systemPackages = with pkgs; [
     brave
-    firefox-bin
+    firefox
     gimp
     gnome3.dconf-editor
     gnome3.gnome-tweaks
     obs-studio
     gnome3.nautilus
     sakura
-    thunderbird-bin
+    thunderbird
     tor-browser-bundle-bin
     yaru-theme
     nixos-artwork.wallpapers.simple-red
