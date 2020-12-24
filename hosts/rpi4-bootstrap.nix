@@ -1,4 +1,6 @@
-{ config, modulesPath, ... }: {
+# based on https://github.com/NixOS/nixpkgs/blob/master/nixos/modules/installer/cd-dvd/sd-image-raspberrypi4.nix
+
+{ config, lib, modulesPath, pkgs, ... }: {
   imports = [
     ../users/root
     ../users/louis
@@ -12,6 +14,8 @@
     enable = true;
     version = 4;
   };
+  boot.kernelPackages = pkgs.linuxPackages_rpi4;
+  boot.consoleLogLevel = lib.mkDefault 7;
 
   sdImage = {
     firmwareSize = 128;
