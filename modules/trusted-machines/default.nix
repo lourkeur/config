@@ -10,6 +10,10 @@
       hostNames = [ "hadronsson" "hadronsson-wl" ];
       publicKey = "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIMEScN2GFNcJzDh9GxO4fYa3h8vBx3lGQUbEcwa+vwlC";
     };
+    quark = {
+      hostNames = [ "192.168.1.72" ];
+      publicKey = "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAICeRm5H7ZEAVuvGo26P+pcXbLtdqlU4lHa3dvsKozuc/";
+    };
   };
 
   nix.binaryCachePublicKeys = [
