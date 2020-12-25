@@ -1,7 +1,7 @@
-{ config, pkgs, ... }:
+{ system, lib, config, pkgs, ... }:
 
 {
-  boot.binfmt.emulatedSystems = [ "aarch64-linux" ];
+  boot.binfmt.emulatedSystems = lib.lists.remove system [ "x86_64-linux" "aarch64-linux" ];
 
   nix.signStorePaths = true;
   nix.sshServe = {
