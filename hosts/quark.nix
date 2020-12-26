@@ -2,6 +2,7 @@
   imports = [
     ../users/louis
     ../profiles/graphical
+    ../profiles/laptop
     ../profiles/utils
     quark/hardware-configuration.nix
   ];
@@ -38,6 +39,8 @@
     gpu_mem=192
     disable_overscan=1
   '';
+
+  programs.captive-browser.interface = "wlan0";
 
   # This value determines the NixOS release from which the default
   # settings for stateful data, like file locations and database versions
