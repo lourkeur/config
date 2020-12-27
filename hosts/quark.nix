@@ -38,6 +38,7 @@
   boot.loader.raspberryPi.firmwareConfig = ''
     gpu_mem=192
     disable_overscan=1
+    dtparam=audio=on
   '';
 
   programs.captive-browser.interface = "wlan0";
