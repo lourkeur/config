@@ -3,6 +3,14 @@
 # My account.
 
 {
+  home-manager.users.louis = {
+    imports = [
+      ../profiles/ssh
+    ];
+
+    home.stateVersion = "20.09";
+  };
+
   users.users.louis = {
     isNormalUser = true;
 
