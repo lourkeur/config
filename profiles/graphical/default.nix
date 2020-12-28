@@ -1,20 +1,21 @@
-{ config, lib, pkgs, ... }:
+{ config, lib, pkgs, system, ... }:
 
 {
   boot.plymouth.enable = true;
   environment.systemPackages = with pkgs; [
-    brave
     firefox
     gimp
     gnome3.dconf-editor
     gnome3.gnome-tweaks
-    obs-studio
     gnome3.nautilus
     sakura
     thunderbird
-    tor-browser-bundle-bin
     yaru-theme
     nixos-artwork.wallpapers.simple-red
+  ] ++ lib.optionals (system == "x86_64-linux") [
+    brave
+    obs-studio
+    tor-browser-bundle-bin
     vscode-with-extensions
   ];
 
