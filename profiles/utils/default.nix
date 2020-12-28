@@ -1,7 +1,7 @@
-{ system, lib, config, pkgs, ... }:
+{ lib, config, pkgs, ... }:
 
 {
-  boot.binfmt.emulatedSystems = lib.lists.remove system [ "x86_64-linux" "aarch64-linux" ];
+  boot.binfmt.emulatedSystems = lib.lists.remove pkgs.system [ "x86_64-linux" "aarch64-linux" ];
 
   environment.systemPackages = with pkgs; [
     texlive.combined.scheme-full

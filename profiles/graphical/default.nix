@@ -1,4 +1,4 @@
-{ config, lib, pkgs, system, ... }:
+{ config, lib, pkgs, ... }:
 
 {
   boot.plymouth.enable = true;
@@ -14,7 +14,7 @@
     thunderbird
     yaru-theme
     nixos-artwork.wallpapers.simple-red
-  ] ++ lib.optionals (system == "x86_64-linux") [
+  ] ++ lib.optionals (pkgs.system == "x86_64-linux") [
     brave
     obs-studio
     tor-browser-bundle-bin
