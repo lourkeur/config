@@ -8,7 +8,9 @@
     gnome3.dconf-editor
     gnome3.gnome-tweaks
     gnome3.nautilus
+    jetbrains.idea-community
     sakura
+    tdesktop
     thunderbird
     yaru-theme
     nixos-artwork.wallpapers.simple-red
