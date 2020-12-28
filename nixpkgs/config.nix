@@ -9,4 +9,9 @@
   ];
 
   doCheckByDefault = false;
+
+  firefox = {
+    enableBrowserpass = true;
+    enableGnomeExtensions = true;
+  };
 }
