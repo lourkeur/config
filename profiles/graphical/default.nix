@@ -31,6 +31,8 @@
 
   services.printing.enable = true;
 
+  services.keybase.enable = true;
+
   services.xserver.enable = true;
   services.xserver.desktopManager.gnome3.enable = true;
 
