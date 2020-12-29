@@ -8,7 +8,6 @@
     gnome3.dconf-editor
     gnome3.gnome-tweaks
     gnome3.nautilus
-    jetbrains.idea-community
     sakura
     tdesktop
     thunderbird
@@ -16,6 +15,7 @@
     nixos-artwork.wallpapers.simple-red
   ] ++ lib.optionals (pkgs.system == "x86_64-linux") [
     brave
+    jetbrains.idea-community
     obs-studio
     tor-browser-bundle-bin
     vscode-with-extensions

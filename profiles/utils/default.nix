@@ -4,9 +4,10 @@
   boot.binfmt.emulatedSystems = lib.lists.remove pkgs.system [ "x86_64-linux" "aarch64-linux" ];
 
   environment.systemPackages = with pkgs; [
-    texlive.combined.scheme-full
     tup
     youtube-dl
+  ] ++ lib.optionals (pkgs.system == "x86_64-linux") [
+    texlive.combined.scheme-full
   ];
 
   nix.signStorePaths = true;
