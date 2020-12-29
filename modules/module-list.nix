@@ -1,5 +1,4 @@
 [
-    ./brave-captive-browser
     ./custom-layouts
     ./neovim
     ./sign-store-paths
