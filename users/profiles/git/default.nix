@@ -14,6 +14,12 @@
       st = "!tig status";
       sw = "switch";
     };
+
+    extraConfig = {
+      log.date = "relative";
+      pull.ff = "only";
+      rerere.enable = true;
+    };
   };
   home.packages = with pkgs.gitAndTools; [
     git-subrepo
