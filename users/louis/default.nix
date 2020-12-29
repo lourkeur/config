@@ -5,6 +5,7 @@
 {
   home-manager.users.louis = {
     imports = [
+      ../profiles/git
       ../profiles/ssh
     ];
 
