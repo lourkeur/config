@@ -38,8 +38,8 @@
 
   services.xserver.displayManager = {
     defaultSession = "gnome";
-    lightdm.autoLogin.enable = true;
-    lightdm.autoLogin.user = "louis";
+    autoLogin.enable = true;
+    autoLogin.user = "louis";
   };
 
   fileSystems = lib.optionalAttrs (!config.special.roaming) {
