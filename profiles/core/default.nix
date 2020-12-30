@@ -168,6 +168,8 @@ in
       fallback = true
 
       builders-use-substitutes = true
+      keep-outputs =  true
+      keep-derivations = true
     '';
 
     daemonNiceLevel = 1;
