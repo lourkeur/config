@@ -6,6 +6,7 @@
   home-manager.users.louis = {
     imports = [
       ../profiles/direnv
+      ../profiles/firefox
       ../profiles/git
       ../profiles/ssh
     ];
