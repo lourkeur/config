@@ -7,6 +7,7 @@
     imports = [
       ../profiles/direnv
       ../profiles/firefox
+      ../profiles/firefox/captive-browser
       ../profiles/git
       ../profiles/ssh
     ];
