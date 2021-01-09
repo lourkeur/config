@@ -12,6 +12,9 @@
 	# disable FF accounts
 	"identity.fxaccounts.enabled" = false;
 
+	# junk blocking
+	"browser.contentblocking.category" = "strict";
+
 	# go through privoxy
 	"network.proxy.http" = "localhost";
 	"network.proxy.http_port" = 8118;
