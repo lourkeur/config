@@ -56,4 +56,6 @@
         X11Forwarding no
       Match All
     '';
+
+  services.privoxy.enable = true;
 }
