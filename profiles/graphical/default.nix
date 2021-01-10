@@ -18,7 +18,6 @@
     jetbrains.idea-community
     obs-studio
     tor-browser-bundle-bin
-    vscode-with-extensions
   ];
 
   services.gnome3.sushi.enable = true;
