@@ -223,4 +223,11 @@ in
   };
 
   users.mutableUsers = false;
+
+  programs.ccache = {
+    enable = true;
+    packageNames = [
+      "webkitgtk"  # takes hours to build on Hydra
+    ];
+  };
 }
