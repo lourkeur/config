@@ -15,6 +15,9 @@
 	# junk blocking
 	"browser.contentblocking.category" = "strict";
 
+	# Search Engine
+	"browser.search.extra.1" = "DuckDuckGo";
+
 	# go through privoxy
 	"network.proxy.http" = "localhost";
 	"network.proxy.http_port" = 8118;
