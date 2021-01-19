@@ -1,5 +1,5 @@
-{ ripgrep, gitAndTools, fzf, makeWrapper, vim_configurable, vimPlugins, fetchFromGitHub, writeTextDir
-, stdenv, runCommandNoCC, remarshal, formats, spacevim_config ? import ./init.nix }:
+{ ripgrep, git, fzf, makeWrapper, vim_configurable, vimPlugins, fetchFromGitHub, writeTextDir
+, lib, stdenv, runCommandNoCC, remarshal, formats }:
 with stdenv;
 let
   format = formats.toml {};
@@ -10,15 +10,14 @@ let
     # ~/.cache/vimfiles/repos
     vimrcConfig.packages.myVimPackage = with vimPlugins; { start = [ ]; };
   };
-  spacevimdir = format.generate "init.toml" spacevim_config;
 in mkDerivation rec {
   pname = "spacevim";
-  version = "1.5.0";
+  version = "1.6.0";
   src = fetchFromGitHub {
     owner = "SpaceVim";
     repo = "SpaceVim";
     rev = "v${version}";
-    sha256 = "1xw4l262x7wzs1m65bddwqf3qx4254ykddsw3c3p844pb3mzqhh7";
+    sha256 = "sha256-QQdtjEdbuzmf0Rw+u2ZltLihnJt8LqkfTrLDWLAnCLE=";
   };
 
   nativeBuildInputs = [ makeWrapper vim-customized];
@@ -38,11 +37,11 @@ in mkDerivation rec {
 
     # trailing slash very important for SPACEVIMDIR
     makeWrapper "${vim-customized}/bin/vim" "$out/bin/spacevim" \
-        --add-flags "-u $out/SpaceVim/vimrc" --set SPACEVIMDIR "${spacevimdir}/" \
-        --prefix PATH : ${lib.makeBinPath [ fzf gitAndTools.git ripgrep]}
+        --add-flags "-u $out/SpaceVim/vimrc" \
+        --prefix PATH : ${lib.makeBinPath [ fzf git ripgrep]}
   '';
 
-  meta = with stdenv.lib; {
+  meta = with lib; {
     description = "Modern Vim distribution";
     longDescription = ''
       SpaceVim is a distribution of the Vim editor that’s inspired by spacemacs.

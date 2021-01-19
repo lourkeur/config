@@ -10,6 +10,7 @@
       ../profiles/firefox
       ../profiles/firefox/captive-browser
       ../profiles/git
+      ../profiles/spacevim
       ../profiles/ssh
     ];
 
