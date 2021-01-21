@@ -40,6 +40,11 @@
     sync.enable = true;
   };
 
+  # Accelerated media w/ NVidia Graphics card
+  hardware.opengl.extraPackages = with pkgs; [
+    vaapiVdpau
+  ];
+
   users.mutableUsers = false;
 
   # This value determines the NixOS release with which your system is to be
