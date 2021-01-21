@@ -1,3 +1,5 @@
+{ pkgs, ... }:
+
 {
   imports =
     [ # Include the results of the hardware scan.
@@ -33,6 +35,11 @@
   };
 
   users.mutableUsers = false;
+
+  # Accelerated media w/ Intel CPU
+  hardware.opengl.extraPackages = with pkgs; [
+    vaapiIntel
+  ];
 
   # This value determines the NixOS release with which your system is to be
   # compatible, in order to avoid breaking some software such as database
