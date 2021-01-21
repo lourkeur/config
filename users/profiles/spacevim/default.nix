@@ -5,4 +5,9 @@ let spacevim = pkgs.callPackage ./pkg { };
 in
 {
   home.packages = [ spacevim ];
+
+
+  home.file.".SpaceVim.d/init.toml" = {
+    source = ./init.toml;
+  };
 }
