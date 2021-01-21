@@ -33,6 +33,13 @@
 
   services.earlyoom.enable = true;
 
+  services.xserver.videoDrivers = [ "nvidiaLegacy390" ];
+  hardware.nvidia.prime = {
+    intelBusId = "PCI:00:02:0";
+    nvidiaBusId = "PCI:01:00:0";
+    sync.enable = true;
+  };
+
   users.mutableUsers = false;
 
   # This value determines the NixOS release with which your system is to be
