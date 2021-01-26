@@ -24,6 +24,9 @@
 	"network.proxy.ssl" = "localhost";
 	"network.proxy.ssl_port" = 8118;
 	"network.proxy.type" = 1;
+
+	# disable built-in password management
+	"signon.rememberSignons" = false;
       };
     };
   };
