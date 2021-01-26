@@ -228,6 +228,19 @@ in
     enable = true;
     packageNames = [
       "webkitgtk"  # takes hours to build on Hydra
+
+      "ckbcomp" "flatpak" "xdg-desktop-portal" "xwayland"  # rebuilt for custom layout
     ];
   };
+
+  # more ccache
+  nixpkgs.overlays = [
+    (final: prev: {
+      xorg = prev.xorg // {
+        setxkbmap = prev.xorg.setxkbmap.override { stdenv = final.ccacheStdenv; };
+        xkbcomp = prev.xorg.xkbcomp.override { stdenv = final.ccacheStdenv; };
+        xorgserver = prev.xorg.xorgserver.override { stdenv = final.ccacheStdenv; };
+      };
+    })
+  ];
 }
