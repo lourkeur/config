@@ -52,8 +52,7 @@ xkb_symbols "custom_xbows" {
     key <AD11> { [ numbersign,      grave       ] };
     key <AD12> { [ at,              asciicircum ] };
 
-    // Add layers for Tab and Escape on the central keys
-    key <BKSP> { [ BackSpace, Escape, Escape, Escape ] };
+    // Add layer for Tab on the central key
     key <RTRN> { [ Return,    Tab,    Tab,    Tab    ] };
 
     // Repurpose left shift as a duplicate backslash
