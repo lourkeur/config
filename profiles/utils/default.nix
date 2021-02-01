@@ -6,8 +6,6 @@
   environment.systemPackages = with pkgs; [
     tup
     youtube-dl
-  ] ++ lib.optionals (pkgs.system == "x86_64-linux") [
-    texlive.combined.scheme-full
   ];
 
   nix.signStorePaths = true;
