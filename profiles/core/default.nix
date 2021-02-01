@@ -48,6 +48,7 @@ in
       nix-index
       nmap
       pass-otp
+      qrencode
       ripgrep
       tealdeer
       utillinux
