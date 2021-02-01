@@ -2,9 +2,6 @@ xkb_symbols "custom_xbows" {
 
     include "custom"
 
-    // Add layer for Tab on the central key
-    key <RTRN> { [ Return,    Tab,    Tab,    Tab    ] };
-
     // Repurpose left shift as a duplicate backslash
     key <LFSH> { [ backslash, bar ] };
 };
