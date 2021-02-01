@@ -2,6 +2,12 @@
 
 {
   services.xserver.extraLayouts = {
+    custom = {
+      description = "my own custom layout";
+      symbolsFile = symbols/custom;
+      languages = [ "en" "fr" "de" ];
+    };
+
     custom_xbows = {
       description = "my own custom layout (X-Bows)";
       symbolsFile = symbols/custom_xbows;

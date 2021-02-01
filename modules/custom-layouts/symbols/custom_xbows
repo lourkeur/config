@@ -1,73 +1,10 @@
 xkb_symbols "custom_xbows" {
 
-    name[Group1] = "Programming (Personal)";
-
-    include "us(basic)"
-
-    key <AD01> { [ q, Q ] };
-    key <AD02> { [ d, D ] };
-    key <AD03> { [ r, R ] };
-    key <AD04> { [ w, W ] };
-    key <AD05> { [ b, B ] };
-    key <AD06> { [ k, K ] };
-    key <AD07> { [ f, F ] };
-    key <AD08> { [ u, U ] };
-    key <AD09> { [ p, P ] };
-    key <AD10> { [ semicolon, colon  ] };
-
-    key <AC01> { [ a, A ] };
-    key <AC02> { [ s, S ] };
-    key <AC03> { [ h, H ] };
-    key <AC04> { [ t, T ] };
-    key <AC05> { [ g, G ] };
-    key <AC06> { [ y, Y ] };
-    key <AC07> { [ n, N ] };
-    key <AC08> { [ e, E ] };
-    key <AC09> { [ o, O ] };
-    key <AC10> { [ i, I ] };
- 
-    key <AB01> { [ z, Z ] };
-    key <AB02> { [ x, X ] };
-    key <AB03> { [ m, M ] };
-    key <AB04> { [ c, C ] };
-    key <AB05> { [ v, V ] };
-    key <AB06> { [ j, J ] };
-    key <AB07> { [ l, L ] };
-
-    // symbols keys, loosely based on programmer dvorak.
-    // Caps Lock can be used to type strings of digits.
-    key <AE12> { [ percent,         ampersand   ] };
-    key <TLDE> { [ asciitilde,      dollar      ] };
-    key <AE01> { [ exclam,          1           ], type[Group1] = "ALPHABETIC" };
-    key <AE02> { [ bracketleft,     2           ], type[Group1] = "ALPHABETIC" };
-    key <AE03> { [ braceleft,       3           ], type[Group1] = "ALPHABETIC" };
-    key <AE04> { [ braceright,      4           ], type[Group1] = "ALPHABETIC" };
-    key <AE05> { [ parenleft,       5           ], type[Group1] = "ALPHABETIC" };
-    key <AE06> { [ equal,           6           ], type[Group1] = "ALPHABETIC" };
-    key <AE07> { [ asterisk,        7           ], type[Group1] = "ALPHABETIC" };
-    key <AE08> { [ parenright,      8           ], type[Group1] = "ALPHABETIC" };
-    key <AE09> { [ plus,            9           ], type[Group1] = "ALPHABETIC" };
-    key <AE10> { [ bracketright,    0           ], type[Group1] = "ALPHABETIC" };
-    key <BKSL> { [ backslash,       bar         ] };
-    key <AD11> { [ numbersign,      grave       ] };
-    key <AD12> { [ at,              asciicircum ] };
+    include "custom"
 
     // Add layer for Tab on the central key
     key <RTRN> { [ Return,    Tab,    Tab,    Tab    ] };
 
     // Repurpose left shift as a duplicate backslash
     key <LFSH> { [ backslash, bar ] };
-    // Also do it for ≷ as a fallback for iso keyboards
-    key <LSGT> { [ backslash, bar ] };
-
-    // Accents and special characters (FR/EN/DE)
-    key <AC01> { [ NoSymbol, NoSymbol, dead_diaeresis,  dead_diaeresis  ] };
-    key <AC02> { [ NoSymbol, NoSymbol, dead_circumflex, dead_circumflex ] };
-    key <AC03> { [ NoSymbol, NoSymbol, dead_grave,      dead_grave      ] };
-    key <AC04> { [ NoSymbol, NoSymbol, dead_acute,      dead_acute      ] };
-    key <AB04> { [ NoSymbol, NoSymbol, ccedilla,        Ccedilla        ] };
-    key <AD04> { [ NoSymbol, NoSymbol, oe,              OE              ] };
-
-    // AltGr is a latch
-    key <RALT> { [ ISO_Level3_Latch, ISO_Level3_Latch ] };
 };
