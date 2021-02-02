@@ -56,9 +56,6 @@ xkb_symbols "custom" {
     // Repurpose ≷ as a duplicate backslash for iso keyboards
     key <LSGT> { [ backslash, bar ] };
 
-    // Repurpose left shift as a duplicate backslash
-    key <LFSH> { [ backslash, bar ] };
-
     // X-Bows Nature&Knight don't support numlock
     key  <KP0> {	[  KP_0	]	};
     key  <KP1> {	[  KP_1	]	};
