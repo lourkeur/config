@@ -12,6 +12,7 @@
       ../profiles/git
       ../profiles/spacevim
       ../profiles/ssh
+      ../profiles/xcape
     ];
 
     home.stateVersion = "20.09";
