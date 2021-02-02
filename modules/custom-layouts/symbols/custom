@@ -3,35 +3,37 @@ xkb_symbols "custom" {
 
     include "us(basic)"
 
+    # Partially optimized letter block
+    # https://github.com/lourkeur/carpalx
     key <AD01> { [ q, Q ] };
-    key <AD02> { [ d, D ] };
-    key <AD03> { [ r, R ] };
-    key <AD04> { [ w, W ] };
+    key <AD02> { [ f, F ] };
+    key <AD03> { [ u, U ] };
+    key <AD04> { [ h, H ] };
     key <AD05> { [ b, B ] };
     key <AD06> { [ k, K ] };
-    key <AD07> { [ f, F ] };
-    key <AD08> { [ u, U ] };
-    key <AD09> { [ p, P ] };
+    key <AD07> { [ r, R ] };
+    key <AD08> { [ l, L ] };
+    key <AD09> { [ g, G ] };
     key <AD10> { [ semicolon, colon  ] };
 
-    key <AC01> { [ a, A ] };
-    key <AC02> { [ s, S ] };
-    key <AC03> { [ h, H ] };
-    key <AC04> { [ t, T ] };
-    key <AC05> { [ g, G ] };
+    key <AC01> { [ w, W ] };
+    key <AC02> { [ i, I ] };
+    key <AC03> { [ e, E ] };
+    key <AC04> { [ a, A ] };
+    key <AC05> { [ o, O ] };
     key <AC06> { [ y, Y ] };
     key <AC07> { [ n, N ] };
-    key <AC08> { [ e, E ] };
-    key <AC09> { [ o, O ] };
-    key <AC10> { [ i, I ] };
+    key <AC08> { [ t, T ] };
+    key <AC09> { [ s, S ] };
+    key <AC10> { [ d, D ] };
 
     key <AB01> { [ z, Z ] };
     key <AB02> { [ x, X ] };
-    key <AB03> { [ m, M ] };
+    key <AB03> { [ p, P ] };
     key <AB04> { [ c, C ] };
     key <AB05> { [ v, V ] };
     key <AB06> { [ j, J ] };
-    key <AB07> { [ l, L ] };
+    key <AB07> { [ m, M ] };
 
     // symbols keys, loosely based on programmer dvorak.
     // Caps Lock can be used to type strings of digits.
