@@ -11,7 +11,7 @@ in
   i18n.defaultLocale = "fr_CH.UTF-8";
   time.timeZone = "Europe/Zurich";
 
-  services.xserver.layout = "custom_xbows";
+  services.xserver.layout = "custom";
   console.useXkbConfig = true;
 
   environment = {
