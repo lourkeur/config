@@ -197,7 +197,7 @@ in
   security.pam.enableSSHAgentAuth = true;
 
   nix.gc.automatic = true;
-  nix.gc.options = "--delete-older-than 1w";
+  nix.gc.options = "--delete-older-than 2d";
   nix.gc.dates = "Sat 03:15";
   systemd.timers.nix-gc.timerConfig.Persistent = true;
 
