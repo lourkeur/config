@@ -57,16 +57,16 @@ xkb_symbols "custom" {
     key <LSGT> { [ backslash, bar ] };
 
     // X-Bows Nature&Knight don't support numlock
-    key  <KP0> {	[  KP_0	]	};
-    key  <KP1> {	[  KP_1	]	};
-    key  <KP2> {	[  KP_2	]	};
-    key  <KP3> {	[  KP_3	]	};
-    key  <KP4> {	[  KP_4	]	};
-    key  <KP5> {	[  KP_5	]	};
-    key  <KP6> {	[  KP_6	]	};
-    key  <KP7> {	[  KP_7	]	};
-    key  <KP8> {	[  KP_8	]	};
-    key  <KP9> {	[  KP_9	]	};
+    key  <KP0> {	[ 0	]	};
+    key  <KP1> {	[ 1	]	};
+    key  <KP2> {	[ 2	]	};
+    key  <KP3> {	[ 3	]	};
+    key  <KP4> {	[ 4	]	};
+    key  <KP5> {	[ 5	]	};
+    key  <KP6> {	[ 6	]	};
+    key  <KP7> {	[ 7	]	};
+    key  <KP8> {	[ 8	]	};
+    key  <KP9> {	[ 9	]	};
 
     // Duplicated because it gets somehow overridden
     // Compose instead of AltGr
