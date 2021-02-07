@@ -228,8 +228,6 @@ in
   programs.ccache = {
     enable = true;
     packageNames = [
-      "webkitgtk"  # takes hours to build on Hydra
-
       "ckbcomp" "flatpak" "ostree" "xdg-desktop-portal" "xwayland"  # rebuilt for custom layout
     ];
   };
