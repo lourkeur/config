@@ -17,6 +17,7 @@
       discord
       element-desktop
       firefox
+      gotop
       manix
       nixpkgs-fmt
       nixFlakes
