@@ -4,11 +4,9 @@
 # generate with
 # sudo nix-store --generate-binary-cache-key $(hostname) /etc/nix/key.{private,public}
 # and add public key in the trusted-machines segment
-
 let
-  postBuildHook = pkgs.writers.writePython3 "sign-paths.py" {} ./sign-paths.py;
+  postBuildHook = pkgs.writers.writePython3 "sign-paths.py" { } ./sign-paths.py;
 in
-
 with lib;
 {
   options.nix.signStorePaths = mkOption {

@@ -8,7 +8,7 @@
   ];
 
   hardware.printers = {
-    ensurePrinters = [ {
+    ensurePrinters = [{
       name = "HP_Color_LaserJet_Pro_M479";
       location = "Mezzanine";
       deviceUri = "socket://lasercolor.ici:9100";

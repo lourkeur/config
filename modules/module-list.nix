@@ -1,10 +1,9 @@
 [
-    ./custom-layouts
-    ./firefox-captive-browser
-    ./neovim
-    ./nix-sandbox-ccache
-    ./printers
-    ./sign-store-paths
-    ./special
-    ./trusted-machines
+  custom-layouts/custom-layouts.nix
+  ./firefox-captive-browser.nix
+  ./nix-sandbox-ccache.nix
+  ./printers.nix
+  sign-store-paths/sign-store-paths.nix
+  ./special.nix
+  ./trusted-machines.nix
 ]
