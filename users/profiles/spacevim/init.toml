@@ -27,6 +27,7 @@
     statusline_unicode_symbols = false
     # Enable vim compatible mode, avoid changing origin vim key bindings
     vimcompatible = false
+    escape_key_binding = ''  # no jk shortcut
 
 # Enable autocomplete layer
 [[layers]]
