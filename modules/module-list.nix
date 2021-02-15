@@ -2,8 +2,5 @@
   custom-layouts/custom-layouts.nix
   ./firefox-captive-browser.nix
   ./nix-sandbox-ccache.nix
-  ./printers.nix
-  sign-store-paths/sign-store-paths.nix
   ./special.nix
-  ./trusted-machines.nix
 ]

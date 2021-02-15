@@ -2,16 +2,19 @@
 # your system.  Help is available in the configuration.nix(5) man page
 # and in the NixOS manual (accessible by running ‘nixos-help’).
 
-{ config, pkgs, ... }:
+{ suites, pkgs, ... }:
 
 {
   imports =
-    [ # Include the results of the hardware scan.
+    suites.workstation ++
+    suites.gnome3 ++
+    suites.buildServer ++
+    [
+      # Include the results of the hardware scan.
       hadron/hardware-configuration.nix
-      ../profiles/graphical
       ../profiles/torbox
-      ../profiles/utils
-      ../users/louis
+      ../profiles/daemons/libvirt
+      ../profiles/hardware/nvidiaLegacy390
     ];
 
   # GRUB
@@ -33,11 +36,9 @@
 
   services.earlyoom.enable = true;
 
-  services.xserver.videoDrivers = [ "nvidiaLegacy390" ];
   hardware.nvidia.prime = {
     intelBusId = "PCI:00:02:0";
     nvidiaBusId = "PCI:01:00:0";
-    sync.enable = true;
   };
 
   # Accelerated media w/ NVidia Graphics card

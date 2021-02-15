@@ -16,7 +16,33 @@ let
 
 
   suites = with profiles; rec {
-    core = [ users.nixos users.root ];
+    gnome3 = [ graphical graphical.gnome3 ];
+    allTools = with tools; [
+      tools  # the root
+      jdk
+      podman
+      wireshark
+    ];
+
+    workstation = allTools ++ [
+      users.louis
+      users.louis.singleUser
+      misc.sign-store-paths
+      network.nfs
+      network.printers
+      network.privoxy
+      network.keybase
+    ];
+
+    laptop = workstation ++ [
+      profiles.laptop
+    ];
+
+    buildServer = [
+      misc.sign-store-paths
+      network.nix-build-server
+      network.nix-serve
+    ];
   };
 in
 mapAttrs (_: v: lib.flk.profileMap v) suites // {

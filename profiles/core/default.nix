@@ -2,6 +2,8 @@
 let inherit (lib) fileContents;
 in
 {
+  imports = [ ./trusted-machines.nix ];
+
   boot.cleanTmpDir = true;
 
   nix.package = pkgs.nixFlakes;

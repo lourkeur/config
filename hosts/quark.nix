@@ -1,11 +1,10 @@
-{ config, pkgs, ... }: {
-  imports = [
-    ../users/louis
-    ../profiles/graphical
-    ../profiles/laptop
-    ../profiles/utils
-    quark/hardware-configuration.nix
-  ];
+{ pkgs, suites, ... }: {
+  imports =
+    suites.laptop ++
+    suites.gnome3 ++
+    [
+      quark/hardware-configuration.nix
+    ];
 
   nixpkgs.system = "aarch64-linux";
 

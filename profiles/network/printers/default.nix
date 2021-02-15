@@ -1,11 +1,11 @@
 { pkgs, ... }:
-
-# Add known printer if CUPS is enabled
-
 {
-  services.printing.drivers = with pkgs; [
-    hplip
-  ];
+  services.printing = {
+    enable = true;
+    drivers = with pkgs; [
+      hplip
+    ];
+  };
 
   hardware.printers = {
     ensurePrinters = [{

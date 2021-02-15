@@ -1,14 +1,12 @@
-{ pkgs, ... }:
+{ suites, pkgs, ... }:
 
 {
   imports =
-    [ # Include the results of the hardware scan.
+    suites.laptop ++
+    suites.gnome3 ++
+    [
+      # Include the results of the hardware scan.
       hadronsson/hardware-configuration.nix
-
-      ../users/louis
-      ../profiles/graphical
-      ../profiles/laptop
-      ../profiles/utils
     ];
 
   # Use the GRUB 2 boot loader.
