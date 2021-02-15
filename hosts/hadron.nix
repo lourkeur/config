@@ -14,6 +14,7 @@
       hadron/hardware-configuration.nix
       ../profiles/torbox
       ../profiles/daemons/libvirt
+      ../profiles/daemons/transmission
       ../profiles/hardware/nvidiaLegacy390
     ];
 
