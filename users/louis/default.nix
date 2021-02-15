@@ -35,6 +35,7 @@
       "lxd"
       "docker"
       "vboxusers"
+      "libvirtd"
     ];
 
     openssh.authorizedKeys.keyFiles = [
