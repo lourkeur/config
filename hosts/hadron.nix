@@ -2,7 +2,7 @@
 # your system.  Help is available in the configuration.nix(5) man page
 # and in the NixOS manual (accessible by running ‘nixos-help’).
 
-{ suites, pkgs, ... }:
+{ hardware, suites, ... }:
 
 {
   imports =
@@ -16,6 +16,7 @@
       ../profiles/daemons/libvirt
       ../profiles/daemons/transmission
       ../profiles/hardware/nvidiaLegacy390
+      hardware.common-cpu-intel-sandy-bridge
     ];
 
   # GRUB
@@ -41,11 +42,6 @@
     intelBusId = "PCI:00:02:0";
     nvidiaBusId = "PCI:01:00:0";
   };
-
-  # Accelerated media w/ NVidia Graphics card
-  hardware.opengl.extraPackages = with pkgs; [
-    vaapiVdpau
-  ];
 
   users.mutableUsers = false;
 
