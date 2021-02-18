@@ -50,6 +50,7 @@ in
       nix-index
       nmap
       pass-otp
+      python3
       qrencode
       ripgrep
       tealdeer
@@ -118,6 +119,8 @@ in
         dn = ifSudo "s systemctl stop";
         jtl = "journalctl";
 
+	# Python
+	py = "python3";
       } // lib.mapAttrs'
         (n: v:
           let
