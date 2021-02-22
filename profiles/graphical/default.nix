@@ -7,6 +7,7 @@
 
   environment.systemPackages = with pkgs; [
     gimp
+    libreoffice-still
     tdesktop
     thunderbird
     nixos-artwork.wallpapers.simple-red
