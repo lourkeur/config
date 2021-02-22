@@ -23,6 +23,7 @@
       obs-studio
       qutebrowser
       signal-desktop
+      spacevim
       starship
       tor-browser-bundle-bin;
 
