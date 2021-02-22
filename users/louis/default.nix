@@ -46,6 +46,8 @@
 
     packages = with pkgs; [
       multimc
+      nixpkgs-review
+      nixpkgs-fmt
     ];
 
     shell = pkgs.fish;
