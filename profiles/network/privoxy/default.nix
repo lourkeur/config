@@ -1,3 +1,0 @@
-{
-  services.privoxy.enable = true;
-}
