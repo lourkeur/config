@@ -6,6 +6,7 @@
   home-manager.users.louis = {
     imports = [
       ../profiles/browserpass
+      ../profiles/brave
       ../profiles/direnv
       ../profiles/firefox
       ../profiles/firefox/captive-browser

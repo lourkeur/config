@@ -12,7 +12,6 @@
     thunderbird
     nixos-artwork.wallpapers.simple-red
   ] ++ lib.optionals (pkgs.system == "x86_64-linux") [
-    brave
     android-studio
     jetbrains.idea-community
     obs-studio
