@@ -48,3 +48,6 @@ name = 'lsp'
 
 [[layers]]
 name = 'lang#scala'
+
+[[layers]]
+name = "lang#python"
