@@ -181,7 +181,6 @@ in
     daemonNiceLevel = 1;
     daemonIONiceLevel = 1;
 
-    binaryCaches = lib.mkAfter (lib.optional (config.networking.hostName != "hadron" && !config.special.roaming) "ssh-ng://nix-ssh@hadron");
   };
 
   programs.autojump.enable = true;
