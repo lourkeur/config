@@ -8,6 +8,7 @@
       # Include the results of the hardware scan.
       hadronsson/hardware-configuration.nix
       hardware.common-cpu-intel-sandy-bridge
+      ../profiles/daemons/postgresql
     ];
 
   # Use the GRUB 2 boot loader.
