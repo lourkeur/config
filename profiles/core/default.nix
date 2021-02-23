@@ -138,10 +138,10 @@ in
   };
 
   fonts = {
-    fonts = with pkgs; [ inconsolata-nerdfont libertinus ];
+    fonts = with pkgs; [ source-code-pro libertinus ];
 
     fontconfig.defaultFonts = {
-      monospace = lib.mkBefore [ "Inconsolata" ];
+      monospace = lib.mkBefore [ "Source Code Pro" ];
       sansSerif = lib.mkBefore [ "Libertinus Sans" ];
       serif = lib.mkBefore [ "Libertinus Serif" ];
     };
