@@ -28,35 +28,6 @@
         "type": "github"
       }
     },
-    "deploy": {
-      "inputs": {
-        "flake-compat": [
-          "flake-compat"
-        ],
-        "naersk": [
-          "naersk"
-        ],
-        "nixpkgs": [
-          "override"
-        ],
-        "utils": [
-          "utils"
-        ]
-      },
-      "locked": {
-        "lastModified": 1613777564,
-        "narHash": "sha256-REYWp3PVwcPx1vqx58NJpT9oaDOnRncVJbocWMKOgME=",
-        "owner": "serokell",
-        "repo": "deploy-rs",
-        "rev": "c599d36da6c9a59d1ac2e39d6b7eeb6ab2925769",
-        "type": "github"
-      },
-      "original": {
-        "owner": "serokell",
-        "repo": "deploy-rs",
-        "type": "github"
-      }
-    },
     "devshell": {
       "locked": {
         "lastModified": 1613641255,
@@ -106,26 +77,6 @@
         "owner": "nix-community",
         "ref": "release-20.09",
         "repo": "home-manager",
-        "type": "github"
-      }
-    },
-    "naersk": {
-      "inputs": {
-        "nixpkgs": [
-          "override"
-        ]
-      },
-      "locked": {
-        "lastModified": 1613655351,
-        "narHash": "sha256-BLBnt3BYsh92qKgqZljckM9s5sZUt30cBQF5b/5pVCU=",
-        "owner": "nmattia",
-        "repo": "naersk",
-        "rev": "1a9e5ddc51bc44c1bf872e02fe2702dc40e8af48",
-        "type": "github"
-      },
-      "original": {
-        "owner": "nmattia",
-        "repo": "naersk",
         "type": "github"
       }
     },
@@ -238,11 +189,9 @@
     "root": {
       "inputs": {
         "ci-agent": "ci-agent",
-        "deploy": "deploy",
         "devshell": "devshell",
         "flake-compat": "flake-compat",
         "home": "home",
-        "naersk": "naersk",
         "nixos": "nixos",
         "nixos-hardware": "nixos-hardware",
         "nur": "nur",

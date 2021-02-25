@@ -14,20 +14,12 @@
       ci-agent.inputs.nixos-20_09.follows = "nixos";
       ci-agent.inputs.nixos-unstable.follows = "override";
       ci-agent.inputs.flake-compat.follows = "flake-compat";
-      deploy.url = "github:serokell/deploy-rs";
-      deploy.inputs.utils.follows = "utils";
-      deploy.inputs.naersk.follows = "naersk";
-      deploy.inputs.nixpkgs.follows = "override";
-      deploy.inputs.flake-compat.follows = "flake-compat";
-      naersk.url = "github:nmattia/naersk";
-      naersk.inputs.nixpkgs.follows = "override";
       flake-compat.url = "github:edolstra/flake-compat";
       flake-compat.flake = false;
     };
 
   outputs =
     inputs@{ ci-agent
-    , deploy
     , devshell
     , home
     , nixos
@@ -71,12 +63,6 @@
           templates.flk.description = "flk template";
 
           defaultTemplate = self.templates.flk;
-
-          deploy.nodes = mkNodes deploy self.nixosConfigurations;
-
-          checks = builtins.mapAttrs
-            (system: deployLib: deployLib.deployChecks self.deploy)
-            deploy.lib;
         };
 
       systemOutputs = eachDefaultSystem (system:
