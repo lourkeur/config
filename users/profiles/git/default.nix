@@ -7,12 +7,15 @@
 
     userName = "Louis Bettens";
     aliases = {
-      b  = "!tig blame";
-      l  = "!tig log";
+      a = "add";
+      b = "!tig blame";
+      c = "commit";
+      l = "!tig log";
       rl = "!tig reflog";
-      s  = "!tig show";
+      s = "!tig show";
       st = "!tig status";
       sw = "switch";
+      z = "stash";
     };
 
     extraConfig = {
