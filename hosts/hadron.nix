@@ -36,6 +36,8 @@
   networking.useDHCP = false;
   networking.interfaces.eno1.useDHCP = true;
 
+  programs.teck-programmer.enable = true;
+
   services.earlyoom.enable = true;
 
   hardware.nvidia.prime = {
