@@ -38,6 +38,12 @@
 
   programs.teck-programmer.enable = true;
 
+  environment.persistence."/nix/persist" = {
+    directories = [
+      "/var/lib/libvirt"
+    ];
+  };
+
   services.earlyoom.enable = true;
 
   hardware.nvidia.prime = {

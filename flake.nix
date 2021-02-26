@@ -7,6 +7,7 @@
       nixos.url = "nixpkgs/release-20.09";
       home.url = "github:nix-community/home-manager/release-20.09";
       home.inputs.nixpkgs.follows = "nixos";
+      impermanence.url = "github:nix-community/impermanence";
       utils.url = "github:numtide/flake-utils/flatten-tree-system";
       devshell.url = "github:numtide/devshell";
       nixos-hardware.url = "github:nixos/nixos-hardware";
