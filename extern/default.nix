@@ -2,7 +2,6 @@
 {
   modules = [
     home.nixosModules.home-manager
-    ci-agent.nixosModules.agent-profile
     impermanence.nixosModules.impermanence
   ];
 

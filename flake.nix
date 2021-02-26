@@ -11,17 +11,12 @@
       utils.url = "github:numtide/flake-utils/flatten-tree-system";
       devshell.url = "github:numtide/devshell";
       nixos-hardware.url = "github:nixos/nixos-hardware";
-      ci-agent.url = "github:hercules-ci/hercules-ci-agent";
-      ci-agent.inputs.nixos-20_09.follows = "nixos";
-      ci-agent.inputs.nixos-unstable.follows = "override";
-      ci-agent.inputs.flake-compat.follows = "flake-compat";
       flake-compat.url = "github:edolstra/flake-compat";
       flake-compat.flake = false;
     };
 
   outputs =
-    inputs@{ ci-agent
-    , devshell
+    inputs@{ devshell
     , home
     , nixos
     , nixos-hardware
