@@ -137,10 +137,9 @@ in
   };
 
   fonts = {
-    fonts = with pkgs; [ source-code-pro libertinus ];
+    fonts = with pkgs; [ dejavu-nerdfont libertinus ];
 
     fontconfig.defaultFonts = {
-      monospace = lib.mkBefore [ "Source Code Pro" ];
       sansSerif = lib.mkBefore [ "Libertinus Sans" ];
       serif = lib.mkBefore [ "Libertinus Serif" ];
     };
