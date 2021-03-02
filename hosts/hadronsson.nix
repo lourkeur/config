@@ -9,6 +9,7 @@
       hadronsson/hardware-configuration.nix
       hardware.common-cpu-intel-sandy-bridge
       ../profiles/daemons/postgresql
+      ../profiles/tools/teck-programmer
     ];
 
   # Use the GRUB 2 boot loader.

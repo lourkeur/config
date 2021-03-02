@@ -16,6 +16,7 @@
       ../profiles/daemons/libvirt
       ../profiles/daemons/transmission
       ../profiles/hardware/nvidiaLegacy390
+      ../profiles/tools/teck-programmer
       hardware.common-cpu-intel-sandy-bridge
     ];
 
@@ -35,8 +36,6 @@
   # replicates the default behaviour.
   networking.useDHCP = false;
   networking.interfaces.eno1.useDHCP = true;
-
-  programs.teck-programmer.enable = true;
 
   environment.persistence."/nix/persist" = {
     directories = [
