@@ -12,7 +12,6 @@
     thunderbird
     nixos-artwork.wallpapers.simple-red
   ] ++ lib.optionals (pkgs.system == "x86_64-linux") [
-    android-studio
     jetbrains.idea-community
     obs-studio
     tor-browser-bundle-bin
@@ -20,5 +19,5 @@
 
   programs.browserpass.enable = true;
 
-  programs.wireshark.package = pkgs.wireshark;  # w/ qt interface
+  programs.wireshark.package = pkgs.wireshark; # w/ qt interface
 }
