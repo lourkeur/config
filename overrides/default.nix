@@ -21,6 +21,7 @@
       nixpkgs-fmt
       nixFlakes
       obs-studio
+      prs
       qutebrowser
       signal-desktop
       spacevim
