@@ -50,6 +50,7 @@
       multimc
       nixpkgs-review
       nixpkgs-fmt
+      tipp10
     ];
 
     shell = pkgs.fish;

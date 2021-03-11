@@ -25,6 +25,7 @@
       signal-desktop
       spacevim
       starship
+      tipp10
       tor-browser-bundle-bin;
 
     haskellPackages = prev.haskellPackages.override {
